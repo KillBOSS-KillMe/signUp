@@ -3,7 +3,6 @@
     <view class="content">
       <image class="banner" src="../../static/images/testImg.png" mode=""></image>
       <view class="modelTitle">预约报名</view>
-      <view></view>
       <view class="form">
         <view title="" note="" class="item">
           <view class="itemName">

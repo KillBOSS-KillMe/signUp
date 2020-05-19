@@ -28,11 +28,21 @@
       }
     }
 
-      ,{
-            "path" : "pages/unmCount/unmCount",
-            "style" : {}
+    , {
+      "path": "pages/unmCount/unmCount",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "enablePullDownRefresh": true,
+        // #ifdef H5
+        "navigationStyle": "custom",
+        // #endif
+        "app-plus": {
+          "bounce": "none",
+          "titleView": false
         }
-    ],
+      }
+    }
+  ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
