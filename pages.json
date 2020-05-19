@@ -28,7 +28,11 @@
       }
     }
 
-  ],
+      ,{
+            "path" : "pages/unmCount/unmCount",
+            "style" : {}
+        }
+    ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
