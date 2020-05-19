@@ -146,9 +146,12 @@ text-overflow: ellipsis; -->
 	button::after {
 	  border: none;
 	}
+  page {
+    background-color: #bbb;
+  }
 	.iconfont {
 	  display: flex;
 	  align-items: center;
-	  justify-content: space-between;
+	  justify-content: center;
 	}
 </style>
