@@ -14,7 +14,7 @@
             单位名称
             <text>*</text>
           </view>
-          <text class="description">（请填写作业证内的单位名称，如有作业点或者项目部请备注。）</text>
+          <view class="description">（请填写作业证内的单位名称，如有作业点或者项目部请备注。）</view>
           <view class="setCon">
             <icon class="iconfont iconkefu"></icon>
             <input type="text" value="" />
@@ -72,6 +72,29 @@
         </view>
         <view class="item">
           <view class="itemName">
+            工程技术人员首次培训人数统计（已选2项）
+            <text>*</text>
+          </view>
+          <checkbox-group @change="checkboxChange">
+          <view class="selCon">
+            
+            <view class="selItem">
+              <checkbox value="1" checked="false" />初级/D
+            </view>
+            <view class="selItem">
+              <checkbox value="2" checked="false" />中级/C
+            </view>
+            <view class="selItem">
+              <checkbox value="3" checked="true" />高级/B
+            </view>
+            <view class="selItem">
+              <checkbox value="4" checked="true" />高级/A
+            </view>
+          </view>
+          </checkbox-group>
+        </view>
+        <view class="item">
+          <view class="itemName">
             初级/D人数
           </view>
           <view class="setCon">
@@ -110,7 +133,7 @@
         </view>
       </view>
       <view class="sub">
-        <view>确定</view>
+        <view>提交</view>
       </view>
     </scroll-view>
     <view class="company">陕西秦盾爆破技术培训中心有限公司</view>
@@ -136,6 +159,11 @@ page {
   position: relative;
   margin: 30rpx;
   background-color: #fff;
+  scrollbar-width: none; /* firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  ::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+  }
   .explanation {
     width: 100%;
     height: auto;
@@ -158,7 +186,7 @@ page {
   .form {
     width: 630rpx;
     height: auto;
-    padding: 30rpx;
+    padding: 20rpx;
     .item {
       width: 650rpx;
       height: auto;
@@ -191,6 +219,29 @@ page {
         input {
           width: 100%;
           padding-left: 20rpx;
+        }
+      }
+      .selCon {
+        width: 648rpx;
+        height: auto;
+        // padding: 19rpx;
+        margin: 20rpx 0;
+        border: 1rpx solid $borderColor;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        .selItem:nth-child(1) {
+          border-top: 0rpx;
+        }
+        .selItem {
+          width: 610rpx;
+          height: 30rpx;
+          padding: 20rpx;
+          border-top: 1rpx solid $borderColor;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
         }
       }
     }

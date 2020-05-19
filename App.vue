@@ -148,6 +148,11 @@ text-overflow: ellipsis; -->
 	}
   page {
     background-color: #bbb;
+    scrollbar-width: none; /* firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+    ::-webkit-scrollbar {
+      display: none; /* Chrome Safari */
+    }
   }
 	.iconfont {
 	  display: flex;

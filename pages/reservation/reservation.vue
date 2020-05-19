@@ -113,7 +113,7 @@ page {
   .form {
     width: 630rpx;
     height: auto;
-    padding: 30rpx;
+    padding: 20rpx;
     .item {
       width: 650rpx;
       height: auto;
